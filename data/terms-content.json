@@ -1,0 +1,72 @@
+{
+  "page": {
+    "title": "Podmínky užívání webu",
+    "subtitle": "DVSG Ostrava-Poruba",
+    "effective_date": "8. července 2025"
+  },
+  "sections": {
+    "general": {
+      "title": "Obecná ustanovení",
+      "text": "Tyto podmínky upravují užívání internetových stránek Družstva pro výstavbu a správu garáží Ostrava-Poruba (dále jen \"družstvo\")."
+    },
+    "operator": {
+      "title": "Provozovatel webu",
+      "details": {
+        "name": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba",
+        "address": "Bohuslava Martinů 3/6090, 708 00 Ostrava-Poruba",
+        "ico": "41033558",
+        "email": "info@dvsg.cz"
+      }
+    },
+    "purpose": {
+      "title": "Účel webu",
+      "text": "Web slouží k poskytování základních informací o družstvu, jeho činnosti a službách. Informace jsou určeny pro širokou veřejnost a členy družstva."
+    },
+    "usage_rules": {
+      "title": "Pravidla užívání",
+      "items": [
+        "Web je určen pouze pro zákonné účely",
+        "Je zakázáno jakékoliv poškozování nebo narušování funkčnosti webu",
+        "Uživatel nesmí šířit škodlivý software nebo spam",
+        "Obsah webu je chráněn autorským právem"
+      ]
+    },
+    "liability": {
+      "title": "Odpovědnost",
+      "items": [
+        "Družstvo se snaží udržovat informace aktuální a správné",
+        "Družstvo nenesie odpovědnost za případné chyby v informacích",
+        "Uživatel užívá web na vlastní odpovědnost",
+        "Družstvo neodpovídá za škody vzniklé užíváním webu"
+      ]
+    },
+    "privacy": {
+      "title": "Ochrana osobních údajů",
+      "text": "Zpracování osobních údajů se řídí samostatným dokumentem",
+      "link_text": "Ochrana osobních údajů",
+      "link_url": "gdpr.html",
+      "additional": "a nařízením GDPR."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "text": "Web nepoužívá žádné cookies ani jiné sledovací technologie. V případě budoucího použití budete informováni."
+    },
+    "changes": {
+      "title": "Změny podmínek",
+      "text": "Družstvo si vyhrazuje právo tyto podmínky změnit. O změnách budete informováni zveřejněním nových podmínek na tomto webu."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "V případě dotazů nás kontaktujte:",
+      "details": {
+        "email": "info@dvsg.cz",
+        "phone": "776 230 108",
+        "address": "Bohuslava Martinů 3/6090, 708 00 Ostrava-Poruba"
+      }
+    },
+    "validity": {
+      "title": "Platnost",
+      "text": "Tyto podmínky nabývají účinnosti dnem 8. července 2025."
+    }
+  }
+}

@@ -14,7 +14,7 @@
     
     --bg-primary: #f8fafc;
     --bg-secondary: #f1f5f9;
-    --bg-hero: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+    --bg-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 80%, #334155 100%);
     --text-primary: #1e293b;
     --text-secondary: #475569;
     --text-muted: #64748b;
@@ -176,7 +176,7 @@ body {
     left: 0;
     right: 0;
     height: 100px;
-    background: linear-gradient(180deg, transparent 0%, rgba(248, 250, 252, 0.8) 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.3) 100%);
 }
 
 .hero-overlay {
@@ -185,7 +185,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(30, 41, 175, 0.05);
+    background: rgba(15, 23, 42, 0.6);
 }
 
 .hero-image-container {
@@ -450,110 +450,98 @@ section:nth-child(even) {
 /* ===== CONTACT ===== */
 .contact-item {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: var(--white-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 .contact-item i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--garage-accent);
-    margin-right: 1rem;
-    margin-top: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 .contact-item h6 {
     color: var(--garage-primary);
+    font-weight: 600;
     margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.5;
 }
 
 .contact-item a {
     color: var(--garage-accent);
     text-decoration: none;
-    transition: var(--transition);
+    font-weight: 500;
 }
 
 .contact-item a:hover {
     color: var(--garage-primary);
 }
 
-.contact-form {
-    background-color: white;
-    padding: 2rem;
+[data-theme="dark"] .contact-item {
+    background: var(--garage-light);
+    border: 1px solid var(--border-color);
+}
+
+/* ===== MAP CONTAINER ===== */
+.map-container {
+    margin-top: 2rem;
+}
+
+.map-container .ratio {
     border-radius: 15px;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border-color);
-}
-
-.form-control {
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 0.75rem;
-    background-color: white;
-    color: var(--text-primary);
-    transition: var(--transition);
-}
-
-.form-control:focus {
-    border-color: var(--garage-accent);
-    box-shadow: 0 0 0 0.2rem rgba(8, 145, 178, 0.25);
-    background-color: white;
-    color: var(--text-primary);
-}
-
-/* ===== BUTTONS ===== */
-.btn {
-    border-radius: 12px;
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
-    transition: var(--transition);
-    border: none;
-    position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-lg);
 }
 
-.btn-primary {
-    background: linear-gradient(135deg, var(--garage-primary), var(--garage-secondary));
-    border: none;
-    color: white;
-}
-
-.btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+/* ===== BETTER HERO BUTTON STYLES ===== */
+.hero-section .btn {
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-transform: none;
+    letter-spacing: 0.5px;
     transition: var(--transition);
 }
 
-.btn-primary:hover {
+.hero-section .btn-primary {
+    background: var(--garage-accent);
+    border-color: var(--garage-accent);
+    box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);
+}
+
+.hero-section .btn-primary:hover {
+    background: var(--garage-primary);
+    border-color: var(--garage-primary);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-    background: linear-gradient(135deg, var(--garage-secondary), var(--garage-primary));
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.4);
 }
 
-.btn-primary:hover::before {
-    left: 100%;
-}
-
-.btn-outline-light {
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    background: transparent;
-}
-
-.btn-outline-light:hover {
+.hero-section .btn-outline-light {
+    border-width: 2px;
     background: rgba(255, 255, 255, 0.1);
-    border-color: white;
-    color: white;
-    transform: translateY(-2px);
+    backdrop-filter: blur(10px);
 }
 
-.btn-lg {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
+.hero-section .btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 /* ===== FOOTER ===== */
@@ -736,6 +724,12 @@ html {
     background: var(--bg-secondary) !important;
 }
 
+/* Dark theme Google Maps filter */
+[data-theme="dark"] #google-map {
+    filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(85%);
+    border-radius: 15px;
+}
+
 /* ===== LOADING ANIMATION ===== */
 .loading {
     display: inline-block;
@@ -787,9 +781,13 @@ html {
 .hero-section h1,
 .hero-section .display-4 {
     color: var(--text-hero) !important;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
 }
 
 .hero-section p,
 .hero-section .lead {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
 }

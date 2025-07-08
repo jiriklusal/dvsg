@@ -16,80 +16,133 @@
     "home": "Domů",
     "about": "O nás",
     "history": "Historie",
-    "services": "Služby",
+    "services": "Činnost",
     "gallery": "Galerie",
     "documents": "Dokumenty",
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Spolehlivá správa garáží v Ostravě-Porubě",
-    "subtitle": "Více než 50 let zkušeností ve správě a výstavbě garáží",
+    "title": "Družstvo pro správu garáží v Ostravě-Porubě",
+    "subtitle": "Více než 30 let tradice a zkušeností ve správě garážových objektů. Spoléhají na nás desítky rodin v Ostravě-Porubě.",
     "cta_button": "Zjistit více"
   },
   "about": {
     "title": "O našem družstvu",
-    "content": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba je zapsáno ve veřejném rejstříku vedeném u Krajského soudu v Ostravě. Zajišťujeme profesionální správu garáží a garážových stání v Ostravě-Porubě s důrazem na kvalitu služeb a spokojenost našich členů.",
+    "content": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba je družstevní organizace založená v roce 1991. Zajišťujeme komplexní správu garážových objektů a poskytujeme pronájem garážových stání výhradně našim členům v Ostravě-Porubě. Naše činnost je založena na družstevních principech vzájemnosti, solidarity a demokratického rozhodování.",
     "values": [
       {
-        "title": "Spolehlivost",
-        "description": "Více než 50 let zkušeností ve správě garáží"
+        "title": "Tradice a spolehlivost",
+        "description": "Více než 30 let zkušeností ve správě garážových objektů s důrazem na kvalitu a spokojenost členů"
       },
       {
-        "title": "Profesionalita",
-        "description": "Odborná péče o váš majetek"
+        "title": "Družstevní principy",
+        "description": "Demokratické rozhodování, transparentnost a spravedlivé rozdělení nákladů mezi členy družstva"
       },
       {
-        "title": "Dostupnost",
-        "description": "Pravidelné úřední hodiny a telefonická podpora"
+        "title": "Profesionální péče",
+        "description": "Odborná správa majetku, pravidelná údržba a rychlé řešení problémů v zájmu všech členů"
       }
     ]
   },
   "services": {
-    "title": "Naše služby",
+    "title": "Činnost družstva",
     "items": [
       {
-        "title": "Správa garáží",
-        "description": "Komplexní správa garážových objektů včetně údržby a oprav",
+        "title": "Správa garážových objektů",
+        "description": "Komplexní správa a administrace garážových objektů pro členy družstva včetně vedení účetnictví a zajištění provozu",
         "icon": "🏢"
       },
       {
-        "title": "Pronájem garážových stání",
-        "description": "Zajištění pronájmu garážových stání pro členy družstva",
+        "title": "Pronájem členům družstva",
+        "description": "Poskytování garážových stání v pronájmu výhradně členům družstva na základě družstevních pravidel a smluv",
         "icon": "🚗"
       },
       {
         "title": "Údržba a opravy",
-        "description": "Pravidelná údržba a opravy garážových objektů",
+        "description": "Pravidelná údržba garážových objektů, preventivní prohlídky a zajištění nutných oprav a modernizací",
         "icon": "🔧"
       },
       {
-        "title": "Administrativa",
-        "description": "Vedení dokumentace a správa plateb",
+        "title": "Členská samospráva",
+        "description": "Demokratické rozhodování o záležitostech družstva prostřednictvím členské schůze a volených orgánů družstva",
         "icon": "📋"
       }
     ]
   },
   "history": {
     "title": "Historie družstva",
-    "content": "Počátky našeho družstva sahají do šedesátých let minulého století, kdy svépomocí byly postaveny jako první halové garáže s provozní budovou v bývalé proluce na ulici Bohuslava Martinů. Původní název zněl 'Družstvo pro výstavbu a správu garáží pracovníků VVÚPS a ZVT Ostrava 8, Slavíkova 1744'.",
+    "content": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba vzniklo 16. září 1991 vyčleněním ze Stavebního bytového družstva Poruba. Bylo zapsáno do obchodního rejstříku 27. června 1991. Družstvo navázalo na tradici správy garážových objektů v Ostravě-Porubě, které sahá do šedesátých let minulého století, kdy byly postaveny první halové garáže s provozní budovou v proluce na ulici Bohuslava Martinů, kde našel umístění i Ústav výpočetní techniky Ostrava-Poruba.",
     "milestones": [
       {
-        "year": "1960",
-        "event": "Založení družstva"
+        "year": "1960-1970",
+        "title": "Počátky garážové výstavby",
+        "description": "Výstavba prvních halových garáží s prolukováním prostorů pro Ústav výpočetní techniky Ostrava-Poruba, kde byly umístěny počítače vedle skutečných garážových stání"
       },
       {
-        "year": "1965",
-        "event": "Výstavba prvních halových garáží"
+        "year": "1989",
+        "title": "Sametová revoluce",
+        "description": "Společenské změny po sametové revoluci - přizpůsobení novým demokratickým podmínkám a tržní ekonomice"
+      },
+      {
+        "year": "1991",
+        "title": "Založení samostatného družstva",
+        "description": "16. září 1991 - vznik družstva vyčleněním ze Stavebního bytového družstva Poruba, zápis do rejstříku 27. června 1991"
+      },
+      {
+        "year": "1993-1996",
+        "title": "Úprava předmětu činnosti",
+        "description": "Postupná úprava a rozšíření předmětu podnikání dle měnících se právních předpisů"
       },
       {
         "year": "2012",
-        "event": "Přizpůsobení novému zákonu o obchodních korporacích"
+        "title": "Nový zákon o korporacích",
+        "description": "Přizpůsobení novému zákonu č. 90/2012 Sb., o obchodních společnostech a družstvech"
       },
       {
-        "year": "2024",
-        "event": "Modernizace webových stránek"
+        "year": "2025",
+        "title": "Modernizace a digitalizace",
+        "description": "Nové webové stránky, aktualizace právních informací a digitalizace služeb pro členy"
       }
     ]
+  },
+  "documents": {
+    "title": "Právní informace a dokumenty",
+    "description": "Veřejně dostupné informace o družstvu",
+    "items": [
+      {
+        "title": "Základní údaje družstva",
+        "description": "IČO, sídlo, kontakty, předmět činnosti",
+        "link": "legal/legal-info.html"
+      },
+      {
+        "title": "Obchodní rejstřík",
+        "description": "Stanovy, účetní závěrky, orgány družstva",
+        "link": "https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=215526&typ=UPLNY",
+        "external": true
+      },
+      {
+        "title": "Sbírka listin",
+        "description": "Veřejné listiny a dokumenty družstva",
+        "link": "https://or.justice.cz/ias/ui/vypis-sl-firma?subjektId=215526",
+        "external": true
+      },
+      {
+        "title": "Ochrana osobních údajů",
+        "description": "GDPR, zpracování osobních údajů",
+        "link": "legal/gdpr.html"
+      },
+      {
+        "title": "Podmínky užívání webu",
+        "description": "Pravidla pro používání tohoto webu",
+        "link": "legal/terms.html"
+      }
+    ],
+    "members_section": {
+      "title": "Pro členy družstva",
+      "description": "Kliknutím na tlačítko níže se dostanete do Google Drive, kde po přihlášení uvidíte složky s dokumenty, které jsou určené pro členy družstva.",
+      "button_text": "Otevřít dokumenty pro členy",
+      "drive_url": "https://drive.google.com/drive/folders/1Bo27HQQQGkiVLQrkPRCdo-VjfpzFJZu0?usp=drive_link"
+    }
   },
   "contact": {
     "title": "Kontaktní informace",
@@ -103,7 +156,7 @@
     "gdpr": "V souladu s nařízením GDPR zpracováváme osobní údaje pouze v nezbytném rozsahu pro plnění našich povinností vůči členům družstva."
   },
   "footer": {
-    "copyright": "© 2024 Družstvo pro výstavbu a správu garáží Ostrava-Poruba. Všechna práva vyhrazena.",
+    "copyright": "© 2025 Družstvo pro výstavbu a správu garáží Ostrava-Poruba. Všechna práva vyhrazena.",
     "developed_by": "Vytvořeno s láskou pro naše členy"
   }
 }
