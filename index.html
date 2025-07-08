@@ -42,10 +42,10 @@
                         <a class="nav-link" href="#about">O nás</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#documents">Právní info</a>
+                        <a class="nav-link" href="#services">Činnost</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Činnost</a>
+                        <a class="nav-link" href="#documents">Právní info</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#history">Historie</a>
@@ -110,7 +110,7 @@
                         vedeném u Krajského soudu v Ostravě.
                     </p>
                     <p class="mb-4">
-                        Zajišťujeme správu garážových objektů a poskytujeme pronájem garážových stání výhradně pro členy družstva 
+                        Zajišťujeme správu garážových objektů a poskytujeme pronájem garážových stání i nebytových prostorů výhradně pro členy družstva 
                         v Ostravě-Porubě. Naše dlouholeté zkušenosti a družstevní principy garantují spolehlivou péče o majetek našich členů.
                     </p>
                     <div class="row g-4 values-container">
@@ -126,8 +126,56 @@
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Činnost družstva</h2>
+                <p class="lead">Poskytujeme služby výhradně členům družstva</p>
+            </div>
+            <div class="row g-4 services-container">
+                <!-- Services will be loaded dynamically from JSON -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">🏢</div>
+                        <h5>Správa garážových objektů</h5>
+                        <p>Komplexní správa a administrace garážových objektů pro členy družstva včetně vedení účetnictví, zajištění provozu a koordinace všech činností</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">🚗</div>
+                        <h5>Pronájem garážových stání</h5>
+                        <p>Poskytování garážových stání v pronájmu výhradně členům družstva na základě družstevních pravidel a nájemních smluv</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">📦</div>
+                        <h5>Pronájem nebytových prostorů</h5>
+                        <p>Pronájem nebytových prostorů v garážových objektech výhradně členům družstva pro doplňkové využití a skladování</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">🔧</div>
+                        <h5>Údržba a opravy objektů</h5>
+                        <p>Pravidelná údržba garážových objektů pro členy družstva, preventivní prohlídky, zajištění nutných oprav, modernizací a technických zlepšení</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">📋</div>
+                        <h5>Administrativní činnosti</h5>
+                        <p>Vedení evidence členů družstva, správa nájemních vztahů, účetnictví, komunikace s úřady a veškerá administrativa související se správou garáží pro členy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Documents Section -->
-    <section id="documents" class="py-5 bg-light">
+    <section id="documents" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Právní informace a dokumenty</h2>
@@ -138,15 +186,7 @@
                     <div class="documents-container">
                         <div class="row g-4 documents-list">
                             <!-- Static documents as fallback -->
-                            <div class="col-md-6">
-                                <a href="legal/legal-info.html" class="document-item text-decoration-none">
-                                    <i class="bi bi-file-earmark-ruled"></i>
-                                    <div>
-                                        <h6>Základní údaje družstva</h6>
-                                        <p class="small text-muted">IČO, sídlo, kontakty, předmět činnosti</p>
-                                    </div>
-                                </a>
-                            </div>
+                           
                             <div class="col-md-6">
                                 <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=215526&typ=UPLNY" class="document-item text-decoration-none" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-file-earmark-text"></i>
@@ -162,6 +202,15 @@
                                     <div>
                                         <h6>Sbírka listin <i class="bi bi-box-arrow-up-right ms-1 small"></i></h6>
                                         <p class="small text-muted">Veřejné listiny a dokumenty družstva</p>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="col-md-6">
+                                <a href="legal/legal-info.html" class="document-item text-decoration-none">
+                                    <i class="bi bi-file-earmark-ruled"></i>
+                                    <div>
+                                        <h6>Základní údaje družstva</h6>
+                                        <p class="small text-muted">IČO, sídlo, kontakty, předmět činnosti</p>
                                     </div>
                                 </a>
                             </div>
@@ -203,34 +252,15 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="alert alert-info mt-4">
-                            <i class="bi bi-info-circle me-2"></i>
-                            <strong>Poznámka:</strong> Přístup k dokumentům pro členy vyžaduje přihlášení. 
-                            V případě problémů s přístupem kontaktujte družstvo na e-mailu info@dvsg.cz nebo během úředních hodin.
-                        </div>
+                        </div>                       
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Činnost družstva</h2>
-                <p class="lead">Poskytujeme služby výhradně členům družstva</p>
-            </div>
-            <div class="row g-4 services-container">
-                <!-- Services will be loaded dynamically from JSON -->
-            </div>
-        </div>
-    </section>
-
     <!-- History Section -->
-    <section id="history" class="py-5">
+    <section id="history" class="py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -310,7 +340,7 @@
     - IMG_2833.JPG: Rezervní obrázek
     - IMG_8299.JPG: Rezervní obrázek
     -->
-    <section id="gallery" class="py-5 bg-light">
+    <section id="gallery" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Galerie</h2>
@@ -484,8 +514,8 @@
                     <ul class="list-unstyled">
                         <li><a href="#home" class="text-white-50">Domů</a></li>
                         <li><a href="#about" class="text-white-50">O nás</a></li>
-                        <li><a href="#documents" class="text-white-50">Právní info</a></li>
                         <li><a href="#services" class="text-white-50">Činnost</a></li>
+                        <li><a href="#documents" class="text-white-50">Právní info</a></li>
                         <li><a href="#history" class="text-white-50">Historie</a></li>
                         <li><a href="#gallery" class="text-white-50">Galerie</a></li>
                         <li><a href="#contact" class="text-white-50">Kontakt</a></li>
@@ -495,7 +525,8 @@
                     <h6 class="mb-3">Činnost</h6>
                     <ul class="list-unstyled">
                         <li><a href="#services" class="text-white-50">Správa garážových objektů</a></li>
-                        <li><a href="#services" class="text-white-50">Pronájem členům</a></li>
+                        <li><a href="#services" class="text-white-50">Pronájem garážových stání</a></li>
+                        <li><a href="#services" class="text-white-50">Pronájem nebytových prostorů</a></li>
                         <li><a href="#services" class="text-white-50">Údržba a opravy</a></li>
                         <li><a href="#services" class="text-white-50">Administrativa</a></li>
                     </ul>

@@ -7,18 +7,28 @@ class ContentLoader {
     
     async loadContent() {
         try {
-            const [contentResponse, additionalResponse] = await Promise.all([
-                fetch('data/content.json'),
-                fetch('data/additional-info.json')
-            ]);
+            const contentResponse = await fetch('data/content.json');
+            
+            if (!contentResponse.ok) {
+                throw new Error(`HTTP error! status: ${contentResponse.status}`);
+            }
             
             this.content = await contentResponse.json();
-            this.additionalInfo = await additionalResponse.json();
+            
+            // Try to load additional info, but don't fail if it doesn't exist
+            try {
+                const additionalResponse = await fetch('data/additional-info.json');
+                if (additionalResponse.ok) {
+                    this.additionalInfo = await additionalResponse.json();
+                }
+            } catch (error) {
+                // Additional info is optional
+            }
             
             this.updateContent();
         } catch (error) {
             console.error('Error loading content:', error);
-            // Fallback to static content if JSON loading fails
+            // Static content in HTML will be used as fallback
         }
     }
     
@@ -119,27 +129,27 @@ class ContentLoader {
             });
         }
     }
-    
-    updateServices() {
+      updateServices() {
         const services = this.content.services;
         if (!services) return;
         
         const servicesTitle = document.querySelector('#services h2');
         const servicesSubtitle = document.querySelector('#services .lead');
         const servicesContainer = document.querySelector('#services .services-container');
-        
+
         if (servicesTitle) servicesTitle.textContent = services.title;
-        if (servicesSubtitle) servicesSubtitle.textContent = 'Poskytujeme služby výhradně členům družstva';
+        if (servicesSubtitle) servicesSubtitle.textContent = services.subtitle || 'Poskytujeme služby výhradně členům družstva';
         
         if (servicesContainer && services.items) {
+            // Only clear and reload if we have new content from JSON
             servicesContainer.innerHTML = '';
             services.items.forEach(service => {
                 const serviceDiv = document.createElement('div');
-                serviceDiv.className = 'col-md-6 col-lg-3';
+                serviceDiv.className = 'col-md-6 col-lg-4 mb-4';
                 serviceDiv.innerHTML = `
                     <div class="service-card h-100">
                         <div class="service-icon">
-                            <i class="bi bi-building"></i>
+                            ${service.icon || '🏢'}
                         </div>
                         <h5>${service.title}</h5>
                         <p>${service.description}</p>
@@ -771,6 +781,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load content from JSON
     contentLoader.loadContent();
+    
+    // Handle hash navigation after page load (e.g., from legal pages)
+    if (window.location.hash) {
+        setTimeout(() => {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }, 100); // Small delay to ensure content is loaded
+    }
     
     // Add some debugging
     console.log('DVSG website initialized successfully!');

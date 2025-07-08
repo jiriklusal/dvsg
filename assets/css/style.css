@@ -745,27 +745,135 @@ html {
     to { transform: rotate(360deg); }
 }
 
-/* ===== UTILITY CLASSES ===== */
+/* ===== LEGAL PAGES STYLING ===== */
+/* Ensure legal pages have the same background as main page */
+main {
+    background: transparent;
+    min-height: 100vh;
+}
+
+/* Legal page cards should match main page styling */
+.card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.card-body {
+    color: var(--text-primary);
+}
+
+/* Text colors for legal pages */
 .text-garage-primary {
     color: var(--garage-primary) !important;
 }
 
-.text-garage-accent {
-    color: var(--garage-accent) !important;
+.text-muted {
+    color: var(--text-muted) !important;
 }
 
-.bg-garage-primary {
-    background-color: var(--garage-primary) !important;
+/* Button styling for legal pages */
+.btn-primary {
+    background: linear-gradient(135deg, var(--garage-primary), var(--garage-secondary));
+    border: none;
+    transition: var(--transition);
 }
 
-.bg-garage-accent {
-    background-color: var(--garage-accent) !important;
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
-.border-garage-accent {
-    border-color: var(--garage-accent) !important;
+.btn-outline-primary {
+    border-color: var(--garage-primary);
+    color: var(--garage-primary);
 }
 
+.btn-outline-primary:hover {
+    background: var(--garage-primary);
+    border-color: var(--garage-primary);
+    color: white;
+}
+
+/* Alert styling for legal pages */
+.alert-info {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+    color: var(--text-primary);
+}
+
+/* Links in legal pages */
+a {
+    color: var(--garage-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--garage-secondary);
+}
+
+/* ===== DARK MODE IMPROVEMENTS FOR LEGAL PAGES ===== */
+/* Better text contrast for legal pages */
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6 {
+    color: var(--text-primary) !important;
+}
+
+.card-body p,
+.card-body li {
+    color: var(--text-primary) !important;
+    opacity: 0.9;
+}
+
+.card-body strong {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+}
+
+/* Dark theme specific adjustments for legal pages */
+[data-theme="dark"] .card {
+    background: #1f2937 !important;
+    border-color: #374151 !important;
+}
+
+[data-theme="dark"] .card-body {
+    color: #f9fafb !important;
+}
+
+[data-theme="dark"] .card-body h1,
+[data-theme="dark"] .card-body h2,
+[data-theme="dark"] .card-body h3,
+[data-theme="dark"] .card-body h4,
+[data-theme="dark"] .text-garage-primary {
+    color: #60a5fa !important;
+}
+
+[data-theme="dark"] .card-body p,
+[data-theme="dark"] .card-body li,
+[data-theme="dark"] .card-body strong {
+    color: #e5e7eb !important;
+}
+
+[data-theme="dark"] .text-muted {
+    color: #9ca3af !important;
+}
+
+[data-theme="dark"] .alert-info {
+    background: #1e3a8a !important;
+    border-color: #1e40af !important;
+    color: #bfdbfe !important;
+}
+
+[data-theme="dark"] .alert-info .alert-heading {
+    color: #93c5fd !important;
+}
+
+/* ===== UTILITY CLASSES ===== */
 .shadow-custom {
     box-shadow: var(--shadow-lg) !important;
 }

@@ -28,7 +28,7 @@
   },
   "about": {
     "title": "O našem družstvu",
-    "content": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba je družstevní organizace založená v roce 1991. Zajišťujeme komplexní správu garážových objektů a poskytujeme pronájem garážových stání výhradně našim členům v Ostravě-Porubě. Naše činnost je založena na družstevních principech vzájemnosti, solidarity a demokratického rozhodování.",
+    "content": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba je družstevní organizace založená v roce 1991. Zajišťujeme komplexní správu garážových objektů a poskytujeme pronájem garážových stání i nebytových prostorů výhradně našim členům v Ostravě-Porubě. Naše činnost je založena na družstevních principech vzájemnosti, solidarity a demokratického rozhodování.",
     "values": [
       {
         "title": "Tradice a spolehlivost",
@@ -46,25 +46,31 @@
   },
   "services": {
     "title": "Činnost družstva",
+    "subtitle": "Poskytujeme služby výhradně členům družstva",
     "items": [
       {
         "title": "Správa garážových objektů",
-        "description": "Komplexní správa a administrace garážových objektů pro členy družstva včetně vedení účetnictví a zajištění provozu",
+        "description": "Komplexní správa a administrace garážových objektů pro členy družstva včetně vedení účetnictví, zajištění provozu a koordinace všech činností",
         "icon": "🏢"
       },
       {
-        "title": "Pronájem členům družstva",
-        "description": "Poskytování garážových stání v pronájmu výhradně členům družstva na základě družstevních pravidel a smluv",
+        "title": "Pronájem garážových stání",
+        "description": "Poskytování garážových stání v pronájmu výhradně členům družstva na základě družstevních pravidel a nájemních smluv",
         "icon": "🚗"
       },
       {
-        "title": "Údržba a opravy",
-        "description": "Pravidelná údržba garážových objektů, preventivní prohlídky a zajištění nutných oprav a modernizací",
+        "title": "Pronájem nebytových prostorů", 
+        "description": "Pronájem nebytových prostorů v garážových objektech výhradně členům družstva pro doplňkové využití a skladování",
+        "icon": "📦"
+      },
+      {
+        "title": "Údržba a opravy objektů",
+        "description": "Pravidelná údržba garážových objektů pro členy družstva, preventivní prohlídky, zajištění nutných oprav, modernizací a technických zlepšení",
         "icon": "🔧"
       },
       {
-        "title": "Členská samospráva",
-        "description": "Demokratické rozhodování o záležitostech družstva prostřednictvím členské schůze a volených orgánů družstva",
+        "title": "Administrativní činnosti",
+        "description": "Vedení evidence členů družstva, správa nájemních vztahů, účetnictví, komunikace s úřady a veškerá administrativa související se správou garáží pro členy",
         "icon": "📋"
       }
     ]
