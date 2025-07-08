@@ -244,7 +244,7 @@ section:nth-child(even) {
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--garage-primary), var(--garage-secondary));
+    background: var(--garage-accent);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -318,10 +318,11 @@ section:nth-child(even) {
 .service-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--garage-primary), var(--garage-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--garage-accent);
+}
+
+.service-icon i {
+    color: var(--garage-accent);
 }
 
 .service-card h5 {
@@ -438,7 +439,7 @@ section:nth-child(even) {
 
 .document-item i {
     font-size: 2rem;
-    color: var(--garage-accent);
+    color: var(--primary-color);
     margin-right: 1rem;
 }
 
@@ -561,7 +562,7 @@ footer h5, footer h6 {
 
 .social-links a:hover {
     transform: scale(1.2);
-    color: var(--garage-accent) !important;
+    color: var(--primary-color) !important;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -710,14 +711,15 @@ html {
 }
 
 [data-theme="dark"] .feature-icon {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    background: var(--primary-color);
 }
 
 [data-theme="dark"] .service-icon {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--garage-accent);
+}
+
+[data-theme="dark"] .service-icon i {
+    color: var(--garage-accent);
 }
 
 [data-theme="dark"] .bg-light {
@@ -899,3 +901,14 @@ a:hover {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.4);
     font-weight: 500;
 }
+
+/* ===== GOOGLE DRIVE ICON ===== */
+.bi-google.text-primary {
+    color: rgb(8, 145, 178) !important;
+}
+
+[data-theme="dark"] .bi-google.text-primary {
+    color: rgb(8, 145, 178) !important;
+}
+
+/* ===== DOCUMENTS ===== */

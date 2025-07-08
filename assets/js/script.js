@@ -149,7 +149,7 @@ class ContentLoader {
                 serviceDiv.innerHTML = `
                     <div class="service-card h-100">
                         <div class="service-icon">
-                            ${service.icon || '🏢'}
+                            <i class="${service.bootstrap_icon || 'bi bi-building'}"></i>
                         </div>
                         <h5>${service.title}</h5>
                         <p>${service.description}</p>
