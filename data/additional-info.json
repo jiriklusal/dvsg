@@ -1,0 +1,144 @@
+{
+  "garage_rules": {
+    "title": "Garážní řád",
+    "sections": [
+      {
+        "title": "1. Obecná ustanovení",
+        "content": "Tento garážní řád upravuje používání garážových stání spravovaných družstvem a je závazný pro všechny uživatele."
+      },
+      {
+        "title": "2. Povinnosti uživatelů",
+        "items": [
+          "Udržovat garážové stání v čistém a pořádném stavu",
+          "Dodržovat bezpečnostní předpisy",
+          "Používat stání pouze k účelům, pro které je určeno",
+          "Platit včas nájemné a další poplatky",
+          "Hlásit poruchy a závady správci"
+        ]
+      },
+      {
+        "title": "3. Zakázané činnosti",
+        "items": [
+          "Skladování nebezpečných látek",
+          "Provádění oprav výrazně znečišťujících prostředí",
+          "Prodej motorových vozidel",
+          "Pořádání akcí rušících klid ostatních uživatelů",
+          "Poškozování společného majetku"
+        ]
+      },
+      {
+        "title": "4. Vstup a výstup",
+        "content": "Garážové objekty jsou přístupné pouze oprávněným osobám. Klíče nebo ovladače nesmí být předávány neoprávněným osobám."
+      },
+      {
+        "title": "5. Bezpečnost",
+        "content": "Uživatelé jsou povinni dodržovat bezpečnostní předpisy a pokyny správce. V případě nehody nebo poruchy je nutné ihned informovat správce."
+      },
+      {
+        "title": "6. Odpovědnost",
+        "content": "Uživatelé odpovídají za škody způsobené jejich činností. Družstvo neodpovídá za škody na vozidlech nebo majetku uživatelů."
+      }
+    ]
+  },
+  "documents": {
+    "categories": [
+      {
+        "name": "Právní dokumenty",
+        "items": [
+          "Stanovy družstva",
+          "Garážní řád",
+          "Smlouvy o nájmu",
+          "Vnitřní předpisy"
+        ]
+      },
+      {
+        "name": "Finanční dokumenty",
+        "items": [
+          "Roční zprávy",
+          "Rozpočty",
+          "Výkazy zisku a ztráty",
+          "Rozvahy"
+        ]
+      },
+      {
+        "name": "Schůze a jednání",
+        "items": [
+          "Zápisy z členských schůzí",
+          "Zápisy z jednání představenstva",
+          "Pozvánky na schůze",
+          "Hlasovací lístky"
+        ]
+      },
+      {
+        "name": "Technické dokumenty",
+        "items": [
+          "Plány garáží",
+          "Revizní zprávy",
+          "Dokumentace oprav",
+          "Energetické audity"
+        ]
+      }
+    ]
+  },
+  "legal_requirements": {
+    "title": "Zákonné povinnosti družstva garáží",
+    "requirements": [
+      {
+        "law": "Zákon č. 90/2012 Sb., o obchodních korporacích",
+        "description": "Základní právní rámec pro činnost družstva",
+        "obligations": [
+          "Vedení seznamu členů",
+          "Svolávání členských schůzí",
+          "Vedení účetnictví",
+          "Podávání návrhů na zápis změn do rejstříku"
+        ]
+      },
+      {
+        "law": "Zákon č. 563/1991 Sb., o účetnictví",
+        "description": "Povinnosti v oblasti účetnictví",
+        "obligations": [
+          "Vedení účetnictví",
+          "Sestavování účetní závěrky",
+          "Archivace účetních dokladů",
+          "Inventarizace majetku"
+        ]
+      },
+      {
+        "law": "Zákon č. 235/2004 Sb., o dani z přidané hodnoty",
+        "description": "Daňové povinnosti",
+        "obligations": [
+          "Registrace k DPH při překročení obratu",
+          "Podávání daňových přiznání",
+          "Vedení evidence pro daňové účely"
+        ]
+      },
+      {
+        "law": "Zákon č. 110/2019 Sb., o zpracování osobních údajů",
+        "description": "Ochrana osobních údajů (GDPR)",
+        "obligations": [
+          "Zpracování osobních údajů v souladu s GDPR",
+          "Vedení záznamů o zpracovatelských činnostech",
+          "Informování subjektů údajů o zpracování"
+        ]
+      }
+    ]
+  },
+  "contact_info": {
+    "office_hours_detail": {
+      "regular": "Každou třetí pracovní středu v měsíci od 16:30 do 17:30 hodin",
+      "location": "Kancelář družstva - Bohuslava Martinů 3/6090, Ostrava-Poruba",
+      "special": "Jiný termín pouze po telefonické dohodě na čísle 776 230 108",
+      "note": "Prosíme o předchozí telefonickou domluvu i pro řádné úřední hodiny"
+    },
+    "payment_info": {
+      "bank": "Česká spořitelna, a.s.",
+      "account_number": "1646763319/0800",
+      "variable_symbol": "Číslo garážového stání",
+      "payment_methods": [
+        "Bankovní převod",
+        "Hotovost v úředních hodinách",
+        "Trvalý příkaz (doporučeno)"
+      ]
+    }
+  }
+}

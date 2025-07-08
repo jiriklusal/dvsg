@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Družstvo pro výstavbu a správu garáží Ostrava-Poruba</title>
+    <meta name="description" content="Spolehlivá správa garáží v Ostravě-Porubě. Více než 50 let zkušeností ve správě a výstavbě garáží.">
+    <meta name="keywords" content="garáže, garážová stání, Ostrava, Poruba, družstvo, správa garáží">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-building me-2"></i>
+                DVSG Ostrava-Poruba
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">O nás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">Historie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documents">Dokumenty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button class="btn btn-outline-light theme-toggle" id="theme-toggle" aria-label="Přepnout téma">
+                            <i class="bi bi-sun-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Spolehlivá správa garáží v Ostravě-Porubě
+                    </h1>
+                    <p class="lead text-white-50 mb-4">
+                        Více než 50 let zkušeností ve správě a výstavbě garáží. 
+                        Profesionální péče o váš majetek s důrazem na kvalitu a spokojenost našich členů.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#about" class="btn btn-primary btn-lg">
+                            <i class="bi bi-info-circle me-2"></i>
+                            Zjistit více
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-telephone me-2"></i>
+                            Kontakt
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <img src="https://picsum.photos/800/600?random=1" alt="Garáže DVSG" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">O našem družstvu</h2>
+                    <p class="lead mb-4">
+                        Družstvo pro výstavbu a správu garáží Ostrava-Poruba je zapsáno ve veřejném rejstříku 
+                        vedeném u Krajského soudu v Ostravě.
+                    </p>
+                    <p class="mb-4">
+                        Zajišťujeme profesionální správu garáží a garážových stání v Ostravě-Porubě s důrazem 
+                        na kvalitu služeb a spokojenost našich členů. Naše dlouholeté zkušenosti a odbornost 
+                        garantují spolehlivou péči o váš majetek.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h5>Spolehlivost</h5>
+                                <p class="small">Více než 50 let zkušeností</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-tools"></i>
+                                </div>
+                                <h5>Profesionalita</h5>
+                                <p class="small">Odborná péče o váš majetek</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <h5>Dostupnost</h5>
+                                <p class="small">Pravidelné úřední hodiny</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image-container">
+                        <img src="https://picsum.photos/800/600?random=2" alt="Budova družstva" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Naše služby</h2>
+                <p class="lead">Komplexní služby pro správu a údržbu garáží</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h5>Správa garáží</h5>
+                        <p>Komplexní správa garážových objektů včetně údržby a oprav</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="bi bi-car-front"></i>
+                        </div>
+                        <h5>Pronájem garážových stání</h5>
+                        <p>Zajištění pronájmu garážových stání pro členy družstva</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="bi bi-wrench"></i>
+                        </div>
+                        <h5>Údržba a opravy</h5>
+                        <p>Pravidelná údržba a opravy garážových objektů</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="bi bi-clipboard-data"></i>
+                        </div>
+                        <h5>Administrativa</h5>
+                        <p>Vedení dokumentace a správa plateb</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Historie družstva</h2>
+                    <p class="lead mb-4">
+                        Počátky našeho družstva sahají do šedesátých let minulého století.
+                    </p>
+                    <p class="mb-4">
+                        Svépomocí byly postaveny jako první halové garáže s provozní budovou v bývalé proluce 
+                        na ulici Bohuslava Martinů. Původní název zněl "Družstvo pro výstavbu a správu garáží 
+                        pracovníků VVÚPS a ZVT Ostrava 8, Slavíkova 1744".
+                    </p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1960</div>
+                            <div class="timeline-content">
+                                <h6>Založení družstva</h6>
+                                <p>Vznik družstva pro výstavbu garáží</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1965</div>
+                            <div class="timeline-content">
+                                <h6>Výstavba prvních garáží</h6>
+                                <p>Dokončení prvních halových garáží</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2012</div>
+                            <div class="timeline-content">
+                                <h6>Nový zákon o korporacích</h6>
+                                <p>Přizpůsobení novému zákonu</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">
+                                <h6>Modernizace</h6>
+                                <p>Nové webové stránky a digitalizace</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="history-image-container">
+                        <img src="https://picsum.photos/800/600?random=3" alt="Historická fotografie" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Galerie</h2>
+                <p class="lead">Podívejte se na naše garáže a zařízení</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/600/400?random=4" alt="Garáže - exteriér" class="img-fluid rounded shadow">
+                        <div class="gallery-overlay">
+                            <h6>Exteriér garáží</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/600/400?random=5" alt="Garáže - interiér" class="img-fluid rounded shadow">
+                        <div class="gallery-overlay">
+                            <h6>Interiér garáží</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/600/400?random=6" alt="Garážová stání" class="img-fluid rounded shadow">
+                        <div class="gallery-overlay">
+                            <h6>Garážová stání</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/600/400?random=7" alt="Správní budova" class="img-fluid rounded shadow">
+                        <div class="gallery-overlay">
+                            <h6>Správní budova</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/600/400?random=8" alt="Parkování" class="img-fluid rounded shadow">
+                        <div class="gallery-overlay">
+                            <h6>Parkování</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/600/400?random=9" alt="Okolí budovy" class="img-fluid rounded shadow">
+                        <div class="gallery-overlay">
+                            <h6>Okolí budovy</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Dokumenty</h2>
+                <p class="lead">Důležité dokumenty a informace pro členy družstva</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="documents-container">
+                        <div class="alert alert-info mb-4">
+                            <i class="bi bi-info-circle me-2"></i>
+                            <strong>Upozornění:</strong> Pro přístup k dokumentům se prosím přihlaste pomocí svých přihlašovacích údajů.
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-google display-1 text-primary mb-3"></i>
+                                <h4 class="card-title">Přístup k dokumentům</h4>
+                                <p class="card-text">
+                                    Kliknutím na tlačítko níže se dostanete do Google Drive, kde po přihlášení 
+                                    uvidíte složky s dokumenty, které vám přísluší.
+                                </p>
+                                <a href="https://drive.google.com/drive/folders/your-folder-id" class="btn btn-primary btn-lg" target="_blank">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>
+                                    Otevřít dokumenty
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row g-4 mt-4">
+                            <div class="col-md-6">
+                                <div class="document-item">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                    <div>
+                                        <h6>Garážní řád</h6>
+                                        <p class="small text-muted">Pravidla pro používání garáží</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="document-item">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                    <div>
+                                        <h6>Zápisy ze schůzí</h6>
+                                        <p class="small text-muted">Dokumenty z jednání družstva</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="document-item">
+                                    <i class="bi bi-file-earmark-spreadsheet"></i>
+                                    <div>
+                                        <h6>Finanční zprávy</h6>
+                                        <p class="small text-muted">Roční finanční výkazy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="document-item">
+                                    <i class="bi bi-file-earmark-ruled"></i>
+                                    <div>
+                                        <h6>Stanovy družstva</h6>
+                                        <p class="small text-muted">Základní dokumenty družstva</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Kontakt</h2>
+                <p class="lead">Spojte se s námi</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Kontaktní informace</h4>
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h6>Adresa</h6>
+                                <p>Bohuslava Martinů 3/6090<br>
+                                708 00 Ostrava-Poruba</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <h6>Telefon</h6>
+                                <p><a href="tel:+420776230108">+420 776 230 108</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <p><a href="mailto:info@dvsg.cz">info@dvsg.cz</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-clock"></i>
+                            <div>
+                                <h6>Úřední hodiny</h6>
+                                <p>Každou třetí pracovní středu v měsíci<br>
+                                od 16:30 do 17:30 hodin v kanceláři družstva.<br>
+                                Jiný termín pouze po telefonické dohodě.</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-bank"></i>
+                            <div>
+                                <h6>Bankovní spojení</h6>
+                                <p>Česká spořitelna, a.s.<br>
+                                Číslo účtu: 1646763319/0800</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-building"></i>
+                            <div>
+                                <h6>IČO</h6>
+                                <p>41033558</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h4 class="mb-4">Napište nám</h4>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Jméno a příjmení</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Telefon</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Předmět</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Zpráva</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-send me-2"></i>
+                                Odeslat zprávu
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-building me-2"></i>
+                        DVSG Ostrava-Poruba
+                    </h5>
+                    <p class="mb-3">
+                        Družstvo pro výstavbu a správu garáží Ostrava-Poruba<br>
+                        Spolehlivá péče o váš majetek více než 50 let.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="mailto:info@dvsg.cz" class="text-white"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="mb-3">Navigace</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white-50">Domů</a></li>
+                        <li><a href="#about" class="text-white-50">O nás</a></li>
+                        <li><a href="#services" class="text-white-50">Služby</a></li>
+                        <li><a href="#contact" class="text-white-50">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="mb-3">Služby</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#services" class="text-white-50">Správa garáží</a></li>
+                        <li><a href="#services" class="text-white-50">Pronájem stání</a></li>
+                        <li><a href="#services" class="text-white-50">Údržba</a></li>
+                        <li><a href="#services" class="text-white-50">Administrativa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Kontakt</h6>
+                    <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Bohuslava Martinů 3/6090, 708 00 Ostrava-Poruba</p>
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i>+420 776 230 108</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i>info@dvsg.cz</p>
+                    <p class="mb-0"><i class="bi bi-building me-2"></i>IČO: 41033558</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Družstvo pro výstavbu a správu garáží Ostrava-Poruba. Všechna práva vyhrazena.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="privacy.html" class="text-white-50 me-3">Ochrana osobních údajů</a>
+                    <a href="terms.html" class="text-white-50">Podmínky užívání</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

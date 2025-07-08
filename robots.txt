@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.dvsg.cz/sitemap.xml
+
+# Disallow sensitive directories
+Disallow: /data/
+Disallow: /*.json$
+
+# Allow CSS and JS files
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Crawl delay
+Crawl-delay: 1

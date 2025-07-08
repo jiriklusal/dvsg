@@ -1,0 +1,109 @@
+{
+  "company": {
+    "name": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba",
+    "short_name": "DVSG Ostrava-Poruba",
+    "address": "Bohuslava Martinů 3/6090",
+    "city": "Ostrava-Poruba",
+    "postal_code": "708 00",
+    "email": "info@dvsg.cz",
+    "phone": "776 230 108",
+    "ico": "41033558",
+    "bank_account": "1646763319/0800",
+    "bank_name": "Česká spořitelna, a.s.",
+    "office_hours": "Každou třetí pracovní středu v měsíci od 16:30 do 17:30 hodin v kanceláři družstva. Jiný termín pouze po telefonické dohodě."
+  },
+  "navigation": {
+    "home": "Domů",
+    "about": "O nás",
+    "history": "Historie",
+    "services": "Služby",
+    "gallery": "Galerie",
+    "documents": "Dokumenty",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Spolehlivá správa garáží v Ostravě-Porubě",
+    "subtitle": "Více než 50 let zkušeností ve správě a výstavbě garáží",
+    "cta_button": "Zjistit více"
+  },
+  "about": {
+    "title": "O našem družstvu",
+    "content": "Družstvo pro výstavbu a správu garáží Ostrava-Poruba je zapsáno ve veřejném rejstříku vedeném u Krajského soudu v Ostravě. Zajišťujeme profesionální správu garáží a garážových stání v Ostravě-Porubě s důrazem na kvalitu služeb a spokojenost našich členů.",
+    "values": [
+      {
+        "title": "Spolehlivost",
+        "description": "Více než 50 let zkušeností ve správě garáží"
+      },
+      {
+        "title": "Profesionalita",
+        "description": "Odborná péče o váš majetek"
+      },
+      {
+        "title": "Dostupnost",
+        "description": "Pravidelné úřední hodiny a telefonická podpora"
+      }
+    ]
+  },
+  "services": {
+    "title": "Naše služby",
+    "items": [
+      {
+        "title": "Správa garáží",
+        "description": "Komplexní správa garážových objektů včetně údržby a oprav",
+        "icon": "🏢"
+      },
+      {
+        "title": "Pronájem garážových stání",
+        "description": "Zajištění pronájmu garážových stání pro členy družstva",
+        "icon": "🚗"
+      },
+      {
+        "title": "Údržba a opravy",
+        "description": "Pravidelná údržba a opravy garážových objektů",
+        "icon": "🔧"
+      },
+      {
+        "title": "Administrativa",
+        "description": "Vedení dokumentace a správa plateb",
+        "icon": "📋"
+      }
+    ]
+  },
+  "history": {
+    "title": "Historie družstva",
+    "content": "Počátky našeho družstva sahají do šedesátých let minulého století, kdy svépomocí byly postaveny jako první halové garáže s provozní budovou v bývalé proluce na ulici Bohuslava Martinů. Původní název zněl 'Družstvo pro výstavbu a správu garáží pracovníků VVÚPS a ZVT Ostrava 8, Slavíkova 1744'.",
+    "milestones": [
+      {
+        "year": "1960",
+        "event": "Založení družstva"
+      },
+      {
+        "year": "1965",
+        "event": "Výstavba prvních halových garáží"
+      },
+      {
+        "year": "2012",
+        "event": "Přizpůsobení novému zákonu o obchodních korporacích"
+      },
+      {
+        "year": "2024",
+        "event": "Modernizace webových stránek"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontaktní informace",
+    "map_info": "Naše kancelář se nachází v Ostravě-Porubě na adrese Bohuslava Martinů 3/6090.",
+    "payment_info": "Úhrada garážového stání je možná převodem na účet družstva"
+  },
+  "legal": {
+    "title": "Právní informace",
+    "privacy_policy": "Ochrana osobních údajů",
+    "terms": "Podmínky užívání",
+    "gdpr": "V souladu s nařízením GDPR zpracováváme osobní údaje pouze v nezbytném rozsahu pro plnění našich povinností vůči členům družstva."
+  },
+  "footer": {
+    "copyright": "© 2024 Družstvo pro výstavbu a správu garáží Ostrava-Poruba. Všechna práva vyhrazena.",
+    "developed_by": "Vytvořeno s láskou pro naše členy"
+  }
+}
