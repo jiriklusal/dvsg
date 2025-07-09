@@ -2,7 +2,14 @@
 
 Tato složka obsahuje obrázky pro webové stránky DVSG.
 
-## Potřebné obrázky
+## Aktuální obrázky
+
+### Favicons
+- `favicon.png` - ikona webu (32x32px) - domeček v barvách DVSG
+- `favicon.svg` - vektorová ikona webu - domeček v barvách DVSG
+- `favicon.ico` - ikona pro starší prohlížeče
+
+## Potřebné obrázky (pro budoucí rozšíření)
 
 ### Hero sekce
 - `garage-hero.jpg` - hlavní obrázek garáží pro hero sekci (1200x800px)
@@ -20,9 +27,6 @@ Tato složka obsahuje obrázky pro webové stránky DVSG.
 - `gallery-4.jpg` - správní budova (600x400px)
 - `gallery-5.jpg` - parkování (600x400px)
 - `gallery-6.jpg` - okolí budovy (600x400px)
-
-### Ostatní
-- `favicon.ico` - ikona webu (32x32px)
 
 ## Doporučené formáty
 - **JPG** pro fotografie
