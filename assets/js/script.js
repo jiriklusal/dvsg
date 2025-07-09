@@ -1,7 +1,7 @@
 // ===== THEME MANAGEMENT =====
 class ThemeManager {
     constructor() {
-        this.theme = localStorage.getItem('theme') || 'light';
+        this.theme = localStorage.getItem('theme') || 'dark';
         this.themeToggle = document.getElementById('theme-toggle');
         this.themeIcon = document.getElementById('theme-icon');
         

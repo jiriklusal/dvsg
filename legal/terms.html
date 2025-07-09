@@ -55,7 +55,7 @@
                     </li>
                     <li class="nav-item ms-2">
                         <button class="btn btn-outline-light theme-toggle" id="theme-toggle" aria-label="Přepnout téma">
-                            <i class="bi bi-sun-fill" id="theme-icon"></i>
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
                         </button>
                     </li>
                 </ul>
@@ -180,7 +180,7 @@
         }
         
         // Load theme preference from localStorage
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         document.documentElement.setAttribute('data-theme', savedTheme);
         document.documentElement.setAttribute('data-bs-theme', savedTheme);
         

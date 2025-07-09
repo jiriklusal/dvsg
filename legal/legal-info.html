@@ -83,7 +83,7 @@
                 id="theme-toggle"
                 aria-label="Přepnout téma"
               >
-                <i class="bi bi-sun-fill" id="theme-icon"></i>
+                <i class="bi bi-moon-fill" id="theme-icon"></i>
               </button>
             </li>
           </ul>
@@ -248,7 +248,7 @@
       function goBackToDocuments() {
         // Store current theme before navigation
         const currentTheme =
-          document.documentElement.getAttribute('data-theme') || 'light';
+          document.documentElement.getAttribute('data-theme') || 'dark';
         localStorage.setItem('theme', currentTheme);
 
         // Navigate to index.html with documents hash - use smooth scroll
@@ -263,7 +263,7 @@
       }
 
       // Load theme preference from localStorage
-      const savedTheme = localStorage.getItem('theme') || 'light';
+      const savedTheme = localStorage.getItem('theme') || 'dark';
       document.documentElement.setAttribute('data-theme', savedTheme);
       document.documentElement.setAttribute('data-bs-theme', savedTheme);
 
