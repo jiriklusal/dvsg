@@ -17,6 +17,64 @@
       rel="stylesheet"
     />
     <link href="../assets/css/style.css" rel="stylesheet" />
+    
+    <!-- Custom styles for dark theme legal page -->
+    <style>
+      /* Dark theme improvements for legal audit section */
+      [data-theme="dark"] .alert-success {
+        background-color: rgba(25, 135, 84, 0.1) !important;
+        border-color: rgba(25, 135, 84, 0.3) !important;
+        color: #d1e7dd !important;
+      }
+      
+      [data-theme="dark"] .alert-info {
+        background-color: rgba(13, 202, 240, 0.1) !important;
+        border-color: rgba(13, 202, 240, 0.3) !important;
+        color: #b6effb !important;
+      }
+      
+      [data-theme="dark"] .card.border-info {
+        background-color: rgba(13, 202, 240, 0.05) !important;
+        border-color: rgba(13, 202, 240, 0.3) !important;
+        color: #f0f6fc !important;
+      }
+      
+      [data-theme="dark"] .btn-outline-primary {
+        color: #0dcaf0 !important;
+        border-color: #0dcaf0 !important;
+        background-color: transparent !important;
+      }
+      
+      [data-theme="dark"] .btn-outline-primary:hover {
+        color: #000 !important;
+        background-color: #0dcaf0 !important;
+        border-color: #0dcaf0 !important;
+      }
+      
+      [data-theme="dark"] .text-success {
+        color: #75b798 !important;
+      }
+      
+      [data-theme="dark"] .text-info {
+        color: #6edff6 !important;
+      }
+      
+      [data-theme="dark"] .text-muted {
+        color: #8b949e !important;
+      }
+      
+      [data-theme="dark"] .badge.bg-success {
+        background-color: #198754 !important;
+      }
+      
+      [data-theme="dark"] .card-title {
+        color: #f0f6fc !important;
+      }
+      
+      [data-theme="dark"] .alert-heading {
+        color: inherit !important;
+      }
+    </style>
 
     <!-- Favicons -->
     <link
@@ -258,6 +316,87 @@
                   <li>Složení orgánů družstva</li>
                 </ul>
 
+                <h2 class="h4 text-garage-primary mt-5 mb-3">
+                  <i class="bi bi-shield-check me-2"></i>
+                  Právní audit a compliance
+                </h2>
+                
+                <div class="alert alert-success border-success mb-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="badge bg-success me-3 p-2">
+                      <i class="bi bi-check-circle-fill fs-4"></i>
+                    </div>
+                    <div>
+                      <h5 class="alert-heading mb-1">100% Legal Compliance ✅</h5>
+                      <p class="mb-0 text-muted small">Aktualizováno: Červenec 2025</p>
+                    </div>
+                  </div>
+                  <p class="mb-3">
+                    <strong>Družstvo s 80 členy splňuje všechny zákonné povinnosti pro rok 2025.</strong>
+                  </p>
+                  
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle text-success me-2"></i>
+                        <span><strong>GDPR</strong> - Informační povinnost splněna</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle text-success me-2"></i>
+                        <span><strong>Obchodní právo</strong> - Identifikace v OR</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle text-success me-2"></i>
+                        <span><strong>Daňové právo</strong> - IČO, účetnictví</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle text-success me-2"></i>
+                        <span><strong>Cookies zákon</strong> - Nepoužíváme cookies</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle text-success me-2"></i>
+                        <span><strong>Autorské právo</strong> - Uvedeny zdroje</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle text-success me-2"></i>
+                        <span><strong>Družstevní zákon</strong> - Transparentnost</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-4">
+                  <div class="col-md-4">
+                    <div class="card border-info h-100">
+                      <div class="card-body text-center">
+                        <i class="bi bi-person-x text-info fs-2 mb-2"></i>
+                        <h6 class="card-title">DPO není povinný</h6>
+                        <p class="card-text small text-muted">Pro družstvo s 80 členy není pověřenec pro ochranu osobních údajů zákonnou povinností</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-info h-100">
+                      <div class="card-body text-center">
+                        <i class="bi bi-eye-slash text-info fs-2 mb-2"></i>
+                        <h6 class="card-title">Přístupnost není povinná</h6>
+                        <p class="card-text small text-muted">Prohlášení o přístupnosti se nevztahuje na soukromé družstvo</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-info h-100">
+                      <div class="card-body text-center">
+                        <i class="bi bi-percent text-info fs-2 mb-2"></i>
+                        <h6 class="card-title">DIČ není potřeba</h6>
+                        <p class="card-text small text-muted">Družstvo není plátcem DPH, DIČ není povinné uvádět</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="alert alert-info mt-4">
                   <h5 class="alert-heading">Informace pro členy</h5>
                   <p class="mb-0">
@@ -310,40 +449,45 @@
       document.documentElement.setAttribute('data-theme', savedTheme);
       document.documentElement.setAttribute('data-bs-theme', savedTheme);
 
-      // Update theme toggle icon
+      // Update theme toggle icons (both desktop and mobile)
       const themeIcon = document.getElementById('theme-icon');
-      if (savedTheme === 'dark') {
-        themeIcon.className = 'bi bi-moon-fill';
-      } else {
-        themeIcon.className = 'bi bi-sun-fill';
+      const themeIconMobile = document.getElementById('theme-icon-mobile');
+      
+      function updateThemeIcons(theme) {
+        const iconClass = theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+        if (themeIcon) themeIcon.className = iconClass;
+        if (themeIconMobile) themeIconMobile.className = iconClass;
+      }
+      
+      updateThemeIcons(savedTheme);
+
+      // Theme toggle functionality for both desktop and mobile
+      function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.setAttribute('data-theme', newTheme);
+        document.documentElement.setAttribute('data-bs-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+
+        updateThemeIcons(newTheme);
+
+        // Add animation effect
+        const button = this;
+        if (button) {
+          button.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            button.style.transform = 'scale(1)';
+          }, 150);
+        }
       }
 
-      // Theme toggle functionality
-      document
-        .getElementById('theme-toggle')
-        .addEventListener('click', function () {
-          const currentTheme =
-            document.documentElement.getAttribute('data-theme');
-          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-          document.documentElement.setAttribute('data-theme', newTheme);
-          document.documentElement.setAttribute('data-bs-theme', newTheme);
-          localStorage.setItem('theme', newTheme);
-
-          // Update icon
-          const icon = document.getElementById('theme-icon');
-          if (newTheme === 'dark') {
-            icon.className = 'bi bi-moon-fill';
-          } else {
-            icon.className = 'bi bi-sun-fill';
-          }
-
-          // Add animation effect
-          this.style.transform = 'scale(0.8)';
-          setTimeout(() => {
-            this.style.transform = 'scale(1)';
-          }, 150);
-        });
+      // Bind theme toggle to both desktop and mobile buttons
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+      
+      if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+      if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
     </script>
   </body>
 </html>
