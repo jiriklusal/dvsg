@@ -601,6 +601,16 @@ section:nth-child(even) {
     box-shadow: var(--shadow-lg);
 }
 
+/* Dark theme adjustments for map section */
+[data-theme="dark"] .map-container {
+    background: var(--garage-light);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .map-info {
+    color: var(--text-secondary);
+}
+
 /* ===== HERO BUTTON STYLES ===== */
 .hero-section .btn {
     font-weight: 600;
@@ -618,7 +628,7 @@ section:nth-child(even) {
         0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Primary button - wysoký kontrast */
+/* Primary button - vysoký kontrast */
 .hero-section .btn-primary {
     background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
     border-color: #0891b2;
@@ -1190,50 +1200,57 @@ button:focus {
     color: var(--text-secondary);
 }
 
-/* Map button styles */
-.map-container .btn-outline-primary {
+/* External buttons styles - pro Google Drive a Google Maps */
+.btn-outline-primary.external-btn,
+.map-container .btn-outline-primary,
+.documents-container .btn-outline-primary {
     border-color: var(--garage-accent);
     color: var(--garage-accent);
     background: transparent;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.map-container .btn-outline-primary:hover {
+.btn-outline-primary.external-btn:hover,
+.map-container .btn-outline-primary:hover,
+.documents-container .btn-outline-primary:hover {
     background: var(--garage-accent);
     border-color: var(--garage-accent);
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
 }
 
-.map-container .btn-outline-primary:focus {
+.btn-outline-primary.external-btn:focus,
+.map-container .btn-outline-primary:focus,
+.documents-container .btn-outline-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(8, 145, 178, 0.25);
     border-color: var(--garage-accent);
     color: var(--garage-accent);
 }
 
-/* Dark theme adjustments for map section */
-[data-theme="dark"] .map-container {
-    background: var(--garage-light);
-    border-color: var(--border-color);
-}
-
-[data-theme="dark"] .map-info {
-    color: var(--text-secondary);
-}
-
-[data-theme="dark"] .map-container .btn-outline-primary {
+/* Dark theme pro externí tlačítka */
+[data-theme="dark"] .btn-outline-primary.external-btn,
+[data-theme="dark"] .map-container .btn-outline-primary,
+[data-theme="dark"] .documents-container .btn-outline-primary {
     border-color: var(--garage-accent);
     color: var(--garage-accent);
     background: rgba(8, 145, 178, 0.1);
 }
 
-[data-theme="dark"] .map-container .btn-outline-primary:hover {
+[data-theme="dark"] .btn-outline-primary.external-btn:hover,
+[data-theme="dark"] .map-container .btn-outline-primary:hover,
+[data-theme="dark"] .documents-container .btn-outline-primary:hover {
     background: var(--garage-accent);
     border-color: var(--garage-accent);
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.4);
 }
 
-[data-theme="dark"] .map-container .btn-outline-primary:focus {
+[data-theme="dark"] .btn-outline-primary.external-btn:focus,
+[data-theme="dark"] .map-container .btn-outline-primary:focus,
+[data-theme="dark"] .documents-container .btn-outline-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(8, 145, 178, 0.4);
     border-color: var(--garage-accent);
     color: var(--garage-accent);
