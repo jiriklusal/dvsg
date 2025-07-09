@@ -1,4 +1,4 @@
- // ===== THEME MANAGEMENT =====
+// ===== THEME MANAGEMENT =====
 class ThemeManager {
     constructor() {
         this.theme = localStorage.getItem('theme') || 'light';
@@ -399,6 +399,38 @@ class Utils {
     }
 }
 
+// ===== EMAIL PROTECTION =====
+class EmailProtection {
+    constructor() {
+        this.init();
+    }
+    
+    init() {
+        // Najdeme všechny chráněné emaily
+        const protectedEmails = document.querySelectorAll('[data-email]');
+        protectedEmails.forEach(element => {
+            this.decodeEmail(element);
+        });
+    }
+    
+    decodeEmail(element) {
+        const encoded = element.getAttribute('data-email');
+        if (encoded) {
+            // Dekódování base64
+            const decoded = atob(encoded);
+            const email = decoded.split('').reverse().join('');
+            
+            // Nastavíme správný email
+            if (element.tagName.toLowerCase() === 'a') {
+                element.href = 'mailto:' + email;
+                element.textContent = email;
+            } else {
+                element.textContent = email;
+            }
+        }
+    }
+}
+
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all components
@@ -410,6 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollAnimations = new ScrollAnimations();
     const loadingManager = new LoadingManager();
     const mobileMenu = new MobileMenu();
+    const emailProtection = new EmailProtection();
     
     // Handle hash navigation after page load (e.g., from legal pages)
     if (window.location.hash) {
