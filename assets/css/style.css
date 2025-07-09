@@ -158,6 +158,10 @@ body {
 }
 
 /* Mobile navigation buttons - before hamburger */
+.navbar .d-lg-none.d-flex {
+    gap: 0.5rem;
+}
+
 .navbar .d-lg-none .btn {
     width: 36px;
     height: 36px;
@@ -219,7 +223,6 @@ body {
     .navbar-toggler:focus {
         box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
     }
-}
 }
 
 /* ===== HERO SECTION ===== */
