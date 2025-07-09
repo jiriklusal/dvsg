@@ -433,6 +433,15 @@ section:nth-child(even) {
     transition: var(--transition);
 }
 
+/* Hide empty gallery overlays */
+.gallery-overlay h6:empty {
+    display: none;
+}
+
+.gallery-overlay:has(h6:empty) {
+    display: none;
+}
+
 .gallery-item:hover .gallery-overlay {
     transform: translateY(0);
 }
@@ -1143,4 +1152,25 @@ button:focus {
 
 [data-theme="dark"] .card-header h5 {
     color: var(--garage-accent) !important;
+}
+
+/* ===== EXTERNAL LINK ICONS ===== */
+.bi-box-arrow-up-right {
+    font-size: 1rem !important;
+    vertical-align: middle;
+}
+
+.bi-box-arrow-up-right.small {
+    font-size: 0.95rem !important;
+}
+
+/* Specific styling for external link icons in documents */
+.document-item .bi-box-arrow-up-right {
+    font-size: 0.95rem !important;
+    opacity: 0.9;
+}
+
+/* External link icons in buttons */
+.btn .bi-box-arrow-up-right {
+    font-size: 1rem !important;
 }
