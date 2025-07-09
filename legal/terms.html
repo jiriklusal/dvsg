@@ -89,7 +89,29 @@
                                 <li>Obsah webu je chráněn autorským právem</li>
                             </ul>
 
-                            <h2 class="h4 text-garage-primary mt-4 mb-3">5. Odpovědnost</h2>
+                            <h2 class="h4 text-garage-primary mt-4 mb-3">5. Používání obrázků</h2>
+                            <p>Na tomto webu jsou použity fotografie z následujících zdrojů:</p>
+                            <ul>
+                                <li>Vlastní fotografie družstva DVSG Ostrava-Poruba</li>
+                                <li>Fotografie z veřejné Facebook skupiny <a href="https://www.facebook.com/groups/porubacisobe" target="_blank" class="text-garage-accent">Poruba či sobě</a>, které zobrazují okolí Ostravy-Poruby</li>
+                                <li>Historické fotografie poskytnuté členy družstva</li>
+                                <li>Snímky z Google Maps a Google Street View zobrazující lokalitu Ostrava-Poruba</li>
+                            </ul>
+                            <p>Všechny použité fotografie z externích zdrojů jsou použity v souladu s pravidly příslušných komunit a služeb, 
+                            včetně <a href="https://www.google.com/permissions/geoguidelines/" target="_blank" class="text-garage-accent">Google Maps Guidelines</a>, 
+                            a to pro nekomerční informační účely. 
+                            Pokud jste vlastníkem autorských práv k některému z použitých obrázků a nesouhlasíte s jeho použitím, 
+                            kontaktujte nás na <span data-email="emMuZ3N2ZEBvZm5p">Načítám...</span> a obrázek neprodleně odstraníme.</p>
+                            
+                            <div class="alert alert-light border mt-3">
+                                <small class="text-muted">
+                                    <i class="bi bi-info-circle me-2"></i>
+                                    Použití obrázků je v souladu s § 31 autorského zákona (citace), § 38a (volné užití pro informační účely) 
+                                    a podmínkami služeb Google Maps pro nekomerční použití.
+                                </small>
+                            </div>
+
+                            <h2 class="h4 text-garage-primary mt-4 mb-3">6. Odpovědnost</h2>
                             <ul>
                                 <li>Družstvo se snaží udržovat informace aktuální a správné</li>
                                 <li>Družstvo nenesie odpovědnost za případné chyby v informacích</li>
@@ -97,27 +119,27 @@
                                 <li>Družstvo neodpovídá za škody vzniklé užíváním webu</li>
                             </ul>
 
-                            <h2 class="h4 text-garage-primary mt-4 mb-3">6. Ochrana osobních údajů</h2>
+                            <h2 class="h4 text-garage-primary mt-4 mb-3">7. Ochrana osobních údajů</h2>
                             <p>Zpracování osobních údajů se řídí samostatným dokumentem 
                             <a href="gdpr.html" class="text-garage-accent">Ochrana osobních údajů</a> 
                             a nařízením GDPR.</p>
 
-                            <h2 class="h4 text-garage-primary mt-4 mb-3">7. Cookies</h2>
+                            <h2 class="h4 text-garage-primary mt-4 mb-3">8. Cookies</h2>
                             <p>Web nepoužívá žádné cookies ani jiné sledovací technologie. 
                             V případě budoucího použití budete informováni.</p>
 
-                            <h2 class="h4 text-garage-primary mt-4 mb-3">8. Změny podmínek</h2>
+                            <h2 class="h4 text-garage-primary mt-4 mb-3">9. Změny podmínek</h2>
                             <p>Družstvo si vyhrazuje právo tyto podmínky změnit. O změnách budete informováni 
                             zveřejněním nových podmínek na tomto webu.</p>
 
-                            <h2 class="h4 text-garage-primary mt-4 mb-3">9. Kontakt</h2>
+                            <h2 class="h4 text-garage-primary mt-4 mb-3">10. Kontakt</h2>
                             <p>V případě dotazů nás kontaktujte:</p>
-                            <p><strong>E-mail:</strong> info@dvsg.cz<br>
+                            <p><strong>E-mail:</strong> <span data-email="emMuZ3N2ZEBvZm5p">Načítám...</span><br>
                             <strong>Telefon:</strong> 776 230 108<br>
                             <strong>Adresa:</strong> Bohuslava Martinů 3/6090, 708 00 Ostrava-Poruba</p>
 
-                            <h2 class="h4 text-garage-primary mt-4 mb-3">10. Platnost</h2>
-                            <p>Tyto podmínky nabývají účinnosti dnem 8. července 2025.</p>
+                            <h2 class="h4 text-garage-primary mt-4 mb-3">11. Platnost</h2>
+                            <p>Tyto podmínky nabývají účinnosti dnem 9. července 2025.</p>
 
                             <div class="mt-5 pt-4 border-top">
                                 <a href="#" onclick="goBackToDocuments(); return false;" class="btn btn-primary">Zpět na dokumenty</a>
@@ -186,6 +208,36 @@
             setTimeout(() => {
                 this.style.transform = 'scale(1)';
             }, 150);
+        });
+    </script>
+
+    <script>
+        // Email protection function
+        function decodeEmail(element) {
+            const encoded = element.getAttribute('data-email');
+            if (encoded) {
+                const decoded = atob(encoded);
+                const email = decoded.split('').reverse().join('');
+                element.textContent = email;
+                if (element.parentElement.tagName.toLowerCase() === 'a') {
+                    element.parentElement.href = 'mailto:' + email;
+                } else {
+                    // Create a clickable link
+                    const link = document.createElement('a');
+                    link.href = 'mailto:' + email;
+                    link.textContent = email;
+                    link.className = 'text-garage-accent';
+                    element.parentNode.replaceChild(link, element);
+                }
+            }
+        }
+        
+        // Initialize email protection on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const protectedEmails = document.querySelectorAll('[data-email]');
+            protectedEmails.forEach(element => {
+                decodeEmail(element);
+            });
         });
     </script>
 </body>
