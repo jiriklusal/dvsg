@@ -919,9 +919,10 @@ footer h5, footer h6 {
         padding: 1.5rem;
     }
     
-    .theme-toggle {
-        width: 32px;
-        height: 32px;
+    /* Hero buttons na mobilu - plná šířka */
+    .hero-section .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
