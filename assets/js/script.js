@@ -4,6 +4,8 @@ class ThemeManager {
         this.theme = localStorage.getItem('theme') || 'dark';
         this.themeToggle = document.getElementById('theme-toggle');
         this.themeIcon = document.getElementById('theme-icon');
+        this.themeToggleMobile = document.getElementById('theme-toggle-mobile');
+        this.themeIconMobile = document.getElementById('theme-icon-mobile');
         
         this.init();
     }
@@ -14,8 +16,16 @@ class ThemeManager {
     }
     
     bindEvents() {
+        // Desktop theme toggle
         if (this.themeToggle) {
             this.themeToggle.addEventListener('click', () => {
+                this.toggleTheme();
+            });
+        }
+        
+        // Mobile theme toggle
+        if (this.themeToggleMobile) {
+            this.themeToggleMobile.addEventListener('click', () => {
                 this.toggleTheme();
             });
         }
@@ -26,8 +36,14 @@ class ThemeManager {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
         
+        // Update desktop icon
         if (this.themeIcon) {
             this.themeIcon.className = theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+        }
+        
+        // Update mobile icon
+        if (this.themeIconMobile) {
+            this.themeIconMobile.className = theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
         }
         
         // Update Bootstrap's data-bs-theme attribute
@@ -38,13 +54,15 @@ class ThemeManager {
         const newTheme = this.theme === 'light' ? 'dark' : 'light';
         this.setTheme(newTheme);
         
-        // Add animation effect
-        if (this.themeToggle) {
-            this.themeToggle.style.transform = 'scale(0.8)';
-            setTimeout(() => {
-                this.themeToggle.style.transform = 'scale(1)';
-            }, 150);
-        }
+        // Add animation effect to both buttons
+        [this.themeToggle, this.themeToggleMobile].forEach(button => {
+            if (button) {
+                button.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 150);
+            }
+        });
     }
 }
 

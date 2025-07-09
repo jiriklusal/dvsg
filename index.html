@@ -32,6 +32,20 @@
                 <i class="bi bi-building me-2"></i>
                 DVSG Ostrava-Poruba
             </a>
+            
+            <!-- Mobile Login Button - Visible only on mobile before hamburger -->
+            <div class="d-lg-none">
+                <a href="https://drive.google.com/drive/folders/1Bo27HQQQGkiVLQrkPRCdo-VjfpzFJZu0?usp=drive_link" 
+                   target="_blank" 
+                   class="btn btn-outline-light btn-sm me-2" 
+                   title="Dokumenty pro členy družstva">
+                    <i class="bi bi-person-check"></i>
+                </a>
+                <button class="btn btn-outline-light theme-toggle me-2" id="theme-toggle-mobile" aria-label="Přepnout téma">
+                    <i class="bi bi-moon-fill" id="theme-icon-mobile"></i>
+                </button>
+            </div>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,13 +72,29 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Kontakt</a>
                     </li>
-                    <li class="nav-item ms-2">
+                    
+                    <!-- Mobile Menu Items -->
+                    <li class="nav-item d-lg-none">
+                        <hr class="dropdown-divider my-2">
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a href="https://drive.google.com/drive/folders/1Bo27HQQQGkiVLQrkPRCdo-VjfpzFJZu0?usp=drive_link" 
+                           target="_blank" 
+                           class="nav-link fw-bold text-info" 
+                           title="Dokumenty pro členy družstva">
+                            <i class="bi bi-person-check me-2"></i>
+                            Přihlášení členů
+                        </a>
+                    </li>
+                    
+                    <!-- Desktop Login Button - Hidden on mobile -->
+                    <li class="nav-item ms-2 d-none d-lg-block">
                         <a href="https://drive.google.com/drive/folders/1Bo27HQQQGkiVLQrkPRCdo-VjfpzFJZu0?usp=drive_link" target="_blank" class="btn btn-outline-light btn-sm" title="Dokumenty pro členy družstva">
                             <i class="bi bi-person-check me-1"></i>
                             Přihlášení členů
                         </a>
                     </li>
-                    <li class="nav-item ms-2">
+                    <li class="nav-item ms-2 d-none d-lg-block">
                         <button class="btn btn-outline-light theme-toggle" id="theme-toggle" aria-label="Přepnout téma">
                             <i class="bi bi-moon-fill" id="theme-icon"></i>
                         </button>

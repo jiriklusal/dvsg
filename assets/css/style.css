@@ -157,6 +157,42 @@ body {
     padding: 0.375rem 0.75rem;
 }
 
+/* Mobile navigation buttons - before hamburger */
+.navbar .d-lg-none .btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 0.875rem;
+}
+
+.navbar .d-lg-none .btn i {
+    margin: 0;
+}
+
+/* Mobile menu login link styling */
+.navbar-nav .nav-link.fw-bold.text-info {
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(8, 145, 178, 0.05) 100%);
+    border-radius: 6px;
+    margin: 0.25rem 0;
+    padding: 0.75rem 1rem;
+    transition: var(--transition);
+}
+
+.navbar-nav .nav-link.fw-bold.text-info:hover {
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.2) 0%, rgba(8, 145, 178, 0.1) 100%);
+    transform: translateX(4px);
+}
+
+/* Mobile divider styling */
+.navbar-nav .dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0.75rem 1rem;
+}
+
 /* Responsivní chování pro přihlašovací tlačítko */
 @media (max-width: 991px) {
     .navbar-nav .nav-item .btn-outline-light {
@@ -168,6 +204,20 @@ body {
     
     .navbar-nav .nav-item.ms-2 {
         margin-left: 0 !important;
+    }
+    
+    /* Mobile navbar spacing improvements */
+    .navbar-brand {
+        margin-right: auto;
+    }
+    
+    .navbar-toggler {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
     }
 }
 
