@@ -1,4 +1,4 @@
-# PRÁVNÍ AUDIT WEBU DVSG - POVINNÉ POŽADAVKY (LEDEN 2025)
+# PRÁVNÍ AUDIT WEBU DVSG - POVINNÉ POŽADAVKY (ČERVENEC 2025)
 **Družstvo s 80 členy - fokus na zákonné povinnosti**
 
 ## 📋 CELKOVÝ PŘEHLED POVINNÝCH POŽADAVKŮ
