@@ -1,6 +1,6 @@
 # DVSG - Obrázky
 
-Tato složka obsahuje obrázky pro webové stránky DVSG.
+Tato složka obsahuje všechny obrázky pro webové stránky DVSG.
 
 ## Aktuální obrázky
 
@@ -8,6 +8,35 @@ Tato složka obsahuje obrázky pro webové stránky DVSG.
 - `favicon.png` - ikona webu (32x32px) - domeček v barvách DVSG
 - `favicon.svg` - vektorová ikona webu - domeček v barvách DVSG
 - `favicon.ico` - ikona pro starší prohlížeče
+
+### Hero a hlavní obrázky
+- `garaz.jpg` - původní obrázek garáží
+- `garaz_cernobila.jpg` - černobílý obrázek garáží pro hero sekci
+
+### Galerie obrázků
+
+#### Okolí Poruba (`poruba/`)
+- `IMG_0050.JPG` - okolí Ostravy-Poruby
+- `IMG_0119.JPG` - moderní garážové objekty v Ostravě
+- `IMG_0124.JPG` - okolí Ostravy-Poruby
+- `IMG_0133.JPG` - okolí Ostravy-Poruby
+- `IMG_0302.JPG` - fotografie z okolí
+- `IMG_0763.JPG` - okolí Ostravy-Poruby
+- `IMG_1085.JPG` - fotografie z okolí
+- `IMG_1132.JPG` - okolí Ostravy-Poruby
+- `IMG_1661.JPG` - fotografie z okolí
+- `IMG_2833.JPG` - fotografie z okolí
+- `IMG_8028.JPG` - kluziště s garážemi v pozadí
+- `IMG_8299.JPG` - fotografie z okolí
+
+#### Interiér garáží (`inside/`)
+- `IMG_1997.JPG` - interiér garáží
+- `IMG_1998.JPG` - interiér garáží
+- `IMG_1999.JPG` - interiér garáží
+- `IMG_2001.JPG` - interiér garáží
+- `IMG_2493.JPG` - interiér garáží
+- `IMG_2622.JPG` - interiér garáží
+- `IMG_5868.JPG` - interiér garáží
 
 ## Potřebné obrázky (pro budoucí rozšíření)
 
