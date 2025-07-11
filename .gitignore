@@ -42,12 +42,8 @@ temp/
 .cache/
 .parcel-cache/
 
-# Real images (use placeholders during development)
-assets/images/*.jpg
-assets/images/*.jpeg
-assets/images/*.png
-assets/images/*.gif
-assets/images/*.svg
+# Temporary files while preserving actual images
+# Note: Keeping actual images for production deployment
 !assets/images/README.md
 
 # Backup files
