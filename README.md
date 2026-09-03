@@ -221,7 +221,7 @@ Stránky jsou optimalizovány pro:
 
 Pro technickou podporu a dotazy:
 - **Email**: info@dvsg.cz
-- **Telefon**: +420 776 230 108
+- **Telefon**: +420 777 054 177
 
 ## 📄 Licence
 

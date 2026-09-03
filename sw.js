@@ -1,7 +1,7 @@
 // ===== SERVICE WORKER PRO OFFLINE PODPORA =====
-const CACHE_NAME = 'dvsg-v1.0.0';
-const STATIC_CACHE = 'dvsg-static-v1';
-const DYNAMIC_CACHE = 'dvsg-dynamic-v1';
+const CACHE_NAME = 'dvsg-v1.1.0';
+const STATIC_CACHE = 'dvsg-static-v2';
+const DYNAMIC_CACHE = 'dvsg-dynamic-v2';
 
 // Kritické zdroje pro offline funkčnost
 const CORE_ASSETS = [

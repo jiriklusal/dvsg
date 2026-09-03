@@ -64,7 +64,7 @@ Po aktivaci zkontrolujte:
 ## 📞 POMOC
 Pokud potřebujete pomoc, kontaktujte:
 - Email: info@dvsg.cz
-- Telefon: 776 230 108
+- Telefon: +420 777 054 177
 
 ---
 **Vytvořeno:** Červenec 2025  
